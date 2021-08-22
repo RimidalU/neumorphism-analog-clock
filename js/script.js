@@ -1,7 +1,15 @@
+
+function cutout() {
+let body = document.querySelector('body');        
+  body.classList.toggle('light');
+}
+
 const deg = 6;
 const hour_hand = document.querySelector('#hh');
 const min_hand = document.querySelector('#mh');
 const sec_hand = document.querySelector('#sh');
+
+
 
 setInterval (() => {
 
