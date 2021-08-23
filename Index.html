@@ -8,8 +8,19 @@
     <title>neumorphism-analog-clock</title>
 </head>
 <body> 
+    <div class="digitalClock_time">
+        <div class="dig_clock_time">
+            <div class="dig_clock_hr"><span id="dig_hr_value">00</span><span class="dig_hr sign">Hours</span></div>
+            <div class="dig_clock_min"><span id="dig_min_value">00</span><span class="dig_min sign">min</span></div>
+            <div class="dig_clock_sec"><span id="dig_sec_value">00</span><span class="dig_sec sign">sec</span></div>
+            <div class="dig_clock_weekday"><span id="dig_weekdayh_value">000000000</span><span class="dig_weekday sign">Weekday</span></div>
+        </div>
+    </div>
+
+
+    
     <div class="clock">
-            <div class="hour">
+        <div class="hour">
             <div id="hh" class="hour_hand"></div>
         </div>
         <div class="min">
@@ -19,6 +30,16 @@
             <div id="sh" class="sec_hand"></div>
         </div>
     </div>
+
+    <div class="digitalClock_date">
+        <div class="dig_clock_date">
+            <div class="dig_clock_year"><span id="dig_year_value">0000</span><span class="dig_year sign">Year</span></div>
+            <div class="dig_clock_month"><span id="dig_month_value">00000000</span><span class="dig_month sign">Month</span></div>
+            <div class="dig_clock_when"><span id="dig_when_value">00</span><span class="dig_when sign">Date</span></div>
+            
+        </div>
+    </div>
+
     <div class="cutout" onclick="cutout ()"></div>
 
     <script src="js/script.js"></script>
